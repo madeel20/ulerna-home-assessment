@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from "react";
 import { useProduct, ProductVariant } from "../context/ProductContext";
 import { Button } from "./ui/button";
 
@@ -18,6 +19,16 @@ const VariantSelector = ({ variants }: VariantSelectorProps) => {
   // Find available colors for selected size
   const selectedSize = state.selectedVariant?.size || sizes[0];
   const availableColors = variants.filter(v => v.size === selectedSize && v.available).map(v => v.color);
+
+  useEffect(() => {
+      const initialVariant = variants.find(v => v.color === selectedColor && v.size === selectedSize && v.available) ||
+        variants.find(v => v.color === selectedColor && v.available) ||
+        variants.find(v => v.size === selectedSize && v.available);
+      if (initialVariant) {
+        dispatch({ type: "SELECT_VARIANT", payload: initialVariant });
+      }
+    }, [selectedColor, selectedSize, variants, dispatch]);
+  
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow flex flex-col gap-4">
