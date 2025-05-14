@@ -1,5 +1,5 @@
 'use client';
-import { product } from '@/app/page';
+import {product} from "@/mock";
 import ProductGallery from "../components/ProductGallery";
 import VariantSelector from "../components/VariantSelector";
 import QuantitySelector from "../components/QuantitySelector";
