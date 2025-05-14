@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ulearna Home Assessment – E-commerce Product Page
 
-## Getting Started
+## Project Overview
+This project is a modern product page for an e-commerce site, built with Next.js 15 and TypeScript. It focuses on a clean user experience, performance, and accessibility.
 
-First, run the development server:
+## Key Features Implemented
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Product Image Gallery with Zoom**: You can view product images in a gallery and zoom in for details.
+- **Color/Size Variant Selection**: Easily select different product colors and sizes. The product display updates in real time.
+- **Add to Cart with Quantity Selector**: Add products to your cart and choose the quantity you want.
+- **Expandable Product Description**: Product details are shown in sections you can expand or collapse.
+- **Responsive Design**: The page works well on all devices, including mobile and desktop.
+- **Custom State Management**: Uses React Context and useReducer to manage cart and product state.
+- **Accessibility**: Uses semantic HTML and supports keyboard navigation for a better experience for everyone.
+- **Loading and Error States**: Shows clear messages when loading data or if something goes wrong.
+- **Performance Optimizations**: Images are optimized and the page loads quickly.
+- **Unit Tests**: Important parts like the gallery, variant selection, add to cart, and theme toggle are tested.
+- **Dark/Light Mode**: You can switch between dark and light themes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What’s Covered from the Requirements
+- All core features from the requirements are included.
+- One advanced feature: custom state management with React Context + useReducer.
+- Technical requirements: Next.js 15+, TypeScript, unit tests, accessibility, error/loading states, and performance optimizations.
+- Bonus: dark/light mode and keyboard navigation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+- All main features are in the `components/` folder.
+- State management is in the `context/` folder.
+- Tests are in the `__tests__/` folder.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have questions or want to know more about any feature, please check the code or reach out.
