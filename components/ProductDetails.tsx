@@ -20,7 +20,7 @@ const ProductDetails = ({
     const mainImage = state.selectedVariant?.image || product.images[0];
     
     return (
-        <main className="min-h-screen pt-10 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4">
+        <main className="min-h-screen pt-20 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4">
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Product Image Gallery */}
             <section>
